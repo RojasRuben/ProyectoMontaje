@@ -1,0 +1,4 @@
+C:\Users\Maftec_07\Source\Repos\PDFCuadrante\ConnectorLibrary\bin\Release\ConnectorLibrary.dll
+C:\Users\Maftec_07\Source\Repos\PDFCuadrante\ConnectorLibrary\bin\Release\ConnectorLibrary.pdb
+C:\Users\Maftec_07\Source\Repos\PDFCuadrante\ConnectorLibrary\obj\Release\ConnectorLibrary.dll
+C:\Users\Maftec_07\Source\Repos\PDFCuadrante\ConnectorLibrary\obj\Release\ConnectorLibrary.pdb

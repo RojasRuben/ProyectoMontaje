@@ -1,0 +1,16 @@
+c:\users\maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\bin\Debug\PlancharExcel.exe.config
+c:\users\maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\bin\Debug\PlancharExcel.exe
+c:\users\maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\bin\Debug\PlancharExcel.pdb
+c:\users\maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\obj\Debug\PlancharExcel.csprojResolveAssemblyReference.cache
+c:\users\maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\obj\Debug\PlancharExcel.frmPlanchar.resources
+c:\users\maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\obj\Debug\PlancharExcel.Properties.Resources.resources
+c:\users\maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\obj\Debug\PlancharExcel.csproj.GenerateResource.Cache
+c:\users\maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\obj\Debug\PlancharExcel.exe
+c:\users\maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\obj\Debug\PlancharExcel.pdb
+C:\Users\Maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\bin\Debug\PlancharLibrary.dll
+C:\Users\Maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\bin\Debug\ConnectorLibrary.dll
+C:\Users\Maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\bin\Debug\PlancharLibrary.pdb
+C:\Users\Maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\bin\Debug\ConnectorLibrary.pdb
+C:\Users\Maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\bin\Debug\Excel.dll
+C:\Users\Maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Maftec_07\documents\visual studio 2015\Projects\PlancharExcel\PlancharExcel\bin\Debug\Excel.pdb

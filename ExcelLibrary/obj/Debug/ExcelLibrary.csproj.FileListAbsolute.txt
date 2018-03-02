@@ -1,0 +1,5 @@
+C:\Users\Maftec_07\documents\visual studio 2015\Projects\PlancharExcel\ExcelLibrary\bin\Debug\ExcelLibrary.dll
+C:\Users\Maftec_07\documents\visual studio 2015\Projects\PlancharExcel\ExcelLibrary\bin\Debug\ExcelLibrary.pdb
+C:\Users\Maftec_07\documents\visual studio 2015\Projects\PlancharExcel\ExcelLibrary\obj\Debug\ExcelLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Maftec_07\documents\visual studio 2015\Projects\PlancharExcel\ExcelLibrary\obj\Debug\ExcelLibrary.dll
+C:\Users\Maftec_07\documents\visual studio 2015\Projects\PlancharExcel\ExcelLibrary\obj\Debug\ExcelLibrary.pdb
