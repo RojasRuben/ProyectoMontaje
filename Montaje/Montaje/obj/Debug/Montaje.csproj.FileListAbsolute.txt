@@ -1,0 +1,19 @@
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\bin\Debug\Montaje.exe.config
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\obj\Debug\Montaje.csprojResolveAssemblyReference.cache
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\obj\Debug\Montaje.frmMontaje.resources
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\obj\Debug\Montaje.Properties.Resources.resources
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\obj\Debug\Montaje.csproj.GenerateResource.Cache
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\bin\Debug\Montaje.exe
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\bin\Debug\Montaje.pdb
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\bin\Debug\PlancharLibrary.dll
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\bin\Debug\Excel.dll
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\bin\Debug\ConnectorLibrary.dll
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\bin\Debug\ICSharpCode.SharpZipLib.dll
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\bin\Debug\PlancharLibrary.pdb
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\bin\Debug\Excel.pdb
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\bin\Debug\ConnectorLibrary.pdb
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\obj\Debug\Montaje.exe
+c:\users\ruben\documents\visual studio 2015\Projects\Montaje\Montaje\obj\Debug\Montaje.pdb
+C:\Users\Maftec_07\Source\Repos\ProyectoMontaje\Montaje\Montaje\bin\Debug\Montaje.exe.config
+C:\Users\Maftec_07\Source\Repos\ProyectoMontaje\Montaje\Montaje\obj\Debug\Montaje.exe
+C:\Users\Maftec_07\Source\Repos\ProyectoMontaje\Montaje\Montaje\obj\Debug\Montaje.pdb
