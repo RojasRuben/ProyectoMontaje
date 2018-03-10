@@ -60,7 +60,7 @@ namespace Montaje
 
         private void buttonExaminar_Click_1(object sender, EventArgs e)
         {
-            open.Filter = "Excel  (*.xlsx)|*.xlsx|Excel (*.xls)|*.xls";
+            open.Filter = "Excel  (*.xlsx)|*.xlsx";
             open.Title = "Selecciona un archivo Excel(.xlsx,.xls)";
 
             if (open.ShowDialog() == DialogResult.OK)

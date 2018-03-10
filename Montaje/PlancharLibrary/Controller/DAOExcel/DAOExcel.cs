@@ -51,7 +51,7 @@ namespace PlancharLibrary.Controller.DAOExcel
                             //IExcelDataReader excelReader =  Factory.CreateReader(myStream, ExcelFileType.Binary);
                             IExcelDataReader excelReader = ExcelReaderFactory.CreateOpenXmlReader(myStream);
 
-                           
+
 
                             DataSet result = excelReader.AsDataSet();
 
@@ -61,12 +61,12 @@ namespace PlancharLibrary.Controller.DAOExcel
                                     dtHojaSeleccionada = result.Tables[i];
                             }
                         }
-                        if ( archivo.Split('.')[archivo.Split('.').Length - 1].ToLower() == "xls")
+                        if (archivo.Split('.')[archivo.Split('.').Length - 1].ToLower() == "xls")
                         {
-                          
+
 
                             //for excel 2003
-                             IExcelDataReader excelReader = ExcelReaderFactory.CreateBinaryReader(myStream);
+                            IExcelDataReader excelReader = ExcelReaderFactory.CreateBinaryReader(myStream);
 
                             DataSet result = excelReader.AsDataSet();
 
@@ -121,15 +121,23 @@ namespace PlancharLibrary.Controller.DAOExcel
                 int columna = 0;
                 while (columna < dtNuevo.Columns.Count)
                 {
-                    if (archivoExcelSeleccionado.ID < 6)
+                    if (archivoExcelSeleccionado.ID == 8)
+                    {
+                        if (dtNuevo.Columns[columna].ColumnName.ToUpper().Trim() != "numerounico".ToUpper() )
+                            dtNuevo.Columns.RemoveAt(columna);
+                        else
+                            columna++;
+                    }
+                    else if (archivoExcelSeleccionado.ID < 6)
                     {
                         if (dtNuevo.Columns[columna].ColumnName.ToUpper().Trim() != "Isometrico".ToUpper() && dtNuevo.Columns[columna].ColumnName.ToUpper().Trim() != "Isométrico".ToUpper() && dtNuevo.Columns[columna].ColumnName.ToUpper().Trim() != "Junta".ToUpper() && dtNuevo.Columns[columna].ColumnName.ToUpper().Trim() != "junta".ToUpper())
                             dtNuevo.Columns.RemoveAt(columna);
                         else
                             columna++;
                     }
-                    else {
-                        if (dtNuevo.Columns[columna].ColumnName.ToUpper().Trim() != "Dibujo".ToUpper() && dtNuevo.Columns[columna].ColumnName.ToUpper().Trim() != "Isometrico".ToUpper() &&  dtNuevo.Columns[columna].ColumnName.ToUpper().Trim() != "Isométrico".ToUpper())
+                    else
+                    {
+                        if (dtNuevo.Columns[columna].ColumnName.ToUpper().Trim() != "Dibujo".ToUpper() && dtNuevo.Columns[columna].ColumnName.ToUpper().Trim() != "Isometrico".ToUpper() && dtNuevo.Columns[columna].ColumnName.ToUpper().Trim() != "Isométrico".ToUpper())
                             dtNuevo.Columns.RemoveAt(columna);
                         else
                             columna++;
@@ -139,12 +147,13 @@ namespace PlancharLibrary.Controller.DAOExcel
                 if (archivoExcelSeleccionado.RequiereValidar)
                 {
                     DataTable tabla = new DataTable();
-                    if (archivoExcelSeleccionado.ID<6)
-                     tabla = _SQL.EjecutaDataAdapter(Stords.Montaje_Set_ValidarMontaje, dtNuevo, "@TablaMontaje", parametro);
-
+                    if (archivoExcelSeleccionado.ID == 8)
+                        tabla = _SQL.EjecutaDataAdapter(Stords.Montaje_Set_ValidarMontajeColada, dtNuevo, "@TablaColadas", parametro);
+                    else if (archivoExcelSeleccionado.ID < 6)
+                        tabla = _SQL.EjecutaDataAdapter(Stords.Montaje_Set_ValidarMontaje, dtNuevo, "@TablaMontaje", parametro);
                     else
-                         tabla = _SQL.EjecutaDataAdapter(Stords.Montaje_Set_ValidarMontajeIsometrico, dtNuevo, "@TablaMontaje", parametro);
-                    
+                        tabla = _SQL.EjecutaDataAdapter(Stords.Montaje_Set_ValidarMontajeIsometrico, dtNuevo, "@TablaMontaje", parametro);
+
                     if (tabla.Rows.Count == 0)
                         mensaje = "no se han encontrado datos repetidos, para continuar presione el boton Planchar informacion";
                     else
@@ -187,13 +196,13 @@ namespace PlancharLibrary.Controller.DAOExcel
                 for (int i = archivoExcelSeleccionado.FilaInicioLeer; i < dthoja.Rows.Count; i++)
                 {
                     DataRow newRow = dtNuevo.NewRow();
-                   // if (dthoja.Rows[i][0].ToString().Trim() != "")
+                    // if (dthoja.Rows[i][0].ToString().Trim() != "")
                     //{
-                        for (int j = 0; j < dthoja.Columns.Count; j++)
-                        {
-                            newRow[j] = dthoja.Rows[i][j].ToString();
-                        }
-                        dtNuevo.Rows.Add(newRow);
+                    for (int j = 0; j < dthoja.Columns.Count; j++)
+                    {
+                        newRow[j] = dthoja.Rows[i][j].ToString();
+                    }
+                    dtNuevo.Rows.Add(newRow);
                     //}
                 }
 
@@ -220,6 +229,10 @@ namespace PlancharLibrary.Controller.DAOExcel
                 else if (archivoExcelSeleccionado.ID == 7)
                 {
                     esCorrectoInsercion = _SQL.Ejecuta(Stords.Montaje_Set_GuardarMontajeEncabezado, dtNuevo, "@TablaMontajeCabecera", parametro);
+                }
+                else if (archivoExcelSeleccionado.ID == 8)
+                {
+                    esCorrectoInsercion = _SQL.Ejecuta(Stords.Montaje_Set_GuardarMontajeColadas, dtNuevo, "@TablaMontajeColadas", parametro);
                 }
 
                 if (esCorrectoInsercion)

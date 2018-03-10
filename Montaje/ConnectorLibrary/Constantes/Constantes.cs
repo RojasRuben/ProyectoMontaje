@@ -43,6 +43,8 @@ namespace ConnectorLibrary.Constantes
         public static string Montaje_Set_GuardarMontajePintura = "Montaje_Set_GuardarMontajePintura";
         public static string Montaje_Set_ValidarMontajeIsometrico = "Montaje_Set_ValidarMontajeIsometrico";
         public static string Montaje_Set_GuardarMontajeEncabezado = "Montaje_Set_GuardarMontajeEncabezado";
+        public static string Montaje_Set_ValidarMontajeColada = "Montaje_Set_ValidarMontajeColada";
+        public static string Montaje_Set_GuardarMontajeColadas = "Montaje_Set_GuardarMontajeColadas";
         
 
     }
